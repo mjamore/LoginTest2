@@ -1,4 +1,4 @@
-$myColor: #505086;
+$bg-color: #E0E5FF;
 
 * {
 	padding: 0;
@@ -6,5 +6,100 @@ $myColor: #505086;
 }
 
 body {
-	background: $myColor;
+	background: $bg-color;
+	font-family: Georgia, sans-serif;
+
+	#content {
+		width: 90%;
+		margin: 0 auto;
+
+		#form-login-container, #form-register-container {
+			background-color: white;
+			max-width: 500px;
+			margin: 50px auto;
+			box-shadow: 2px 2px 10px black;
+			border-radius: 10px;
+		} /* #form-login-container, #form-register-container */
+
+		#form-login-container:after, #form-register-container:after, input:after, label:after, #pw-login:after {
+		    content: ".";
+		    display: block;
+		    height: 0;
+		    clear: both;
+		    visibility: hidden;
+		} /* #form-login-container:after, #form-register-container:after, input:after, label:after, #pw-login:after */
+
+		form {
+		width: 90%;
+		margin: 0 auto;
+
+			label {
+				width: 30%;
+				display: inline-block;
+				text-align: right;
+				float: left;
+				line-height: 40px;
+			} /* label */
+
+			input {
+				width: 60%;
+				font-size: 100%;
+				padding-left: 10px;
+				margin-bottom: 10px;
+				height: 30px;
+				float: right;
+			} /* input */	
+
+			.valid {
+				background: #AFE2AF;
+				border: 2px solid #155215;
+				border-radius: 3px;
+			} /* .valid */
+
+			.invalid {
+				background: #F5BDBD;
+				border: 2px solid #640B0B;
+				border-radius: 3px;
+			} /* .invalid */
+
+			input[type=submit] {
+				width: 115px;
+				height: 40px;
+				float: right;
+				margin-bottom: 20px;
+				padding-left: 0px;
+				-moz-box-shadow: 0px 0px 5px #999;
+				-webkit-box-shadow: 0px 0px 5px #999;
+				border: 1px solid #556f8c;
+				background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
+				cursor: pointer;
+				color: white;
+				border-radius: 10px;
+			} /* input[type=submit] */
+
+			p.error {
+				display: none;
+				float: left;
+				color: red;
+				margin: 0 0 20px 37%;
+			} /* p.error */
+
+		} /* form */
+
+	} /* #content */
 }
+
+h3, h4 {
+	text-align: center;
+}
+
+h3 {
+	margin: 20px auto;
+	padding-top: 20px;
+}
+
+h4 {
+	margin: 50px auto;	
+}
+

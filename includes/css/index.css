@@ -5,4 +5,98 @@
 
 /* line 8, ../sass/index.scss */
 body {
-  background: #505086; }
+  background: #e0e5ff;
+  font-family: Georgia, sans-serif;
+  /* #content */ }
+  /* line 12, ../sass/index.scss */
+  body #content {
+    width: 90%;
+    margin: 0 auto;
+    /* #form-login-container, #form-register-container */
+    /* #form-login-container:after, #form-register-container:after, input:after, label:after, #pw-login:after */
+    /* form */ }
+    /* line 16, ../sass/index.scss */
+    body #content #form-login-container, body #content #form-register-container {
+      background-color: white;
+      max-width: 500px;
+      margin: 50px auto;
+      box-shadow: 2px 2px 10px black;
+      border-radius: 10px; }
+    /* line 24, ../sass/index.scss */
+    body #content #form-login-container:after, body #content #form-register-container:after, body #content input:after, body #content label:after, body #content #pw-login:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    /* line 32, ../sass/index.scss */
+    body #content form {
+      width: 90%;
+      margin: 0 auto;
+      /* label */
+      /* input */
+      /* .valid */
+      /* .invalid */
+      /* input[type=submit] */
+      /* p.error */ }
+      /* line 36, ../sass/index.scss */
+      body #content form label {
+        width: 30%;
+        display: inline-block;
+        text-align: right;
+        float: left;
+        line-height: 40px; }
+      /* line 44, ../sass/index.scss */
+      body #content form input {
+        width: 60%;
+        font-size: 100%;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        height: 30px;
+        float: right; }
+      /* line 53, ../sass/index.scss */
+      body #content form .valid {
+        background: #AFE2AF;
+        border: 2px solid #155215;
+        border-radius: 3px; }
+      /* line 59, ../sass/index.scss */
+      body #content form .invalid {
+        background: #F5BDBD;
+        border: 2px solid #640B0B;
+        border-radius: 3px; }
+      /* line 65, ../sass/index.scss */
+      body #content form input[type=submit] {
+        width: 115px;
+        height: 40px;
+        float: right;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        -moz-box-shadow: 0px 0px 5px #999;
+        -webkit-box-shadow: 0px 0px 5px #999;
+        border: 1px solid #556f8c;
+        background: -moz-linear-gradient(top, #718da9 0%, #415d79 100%);
+        /* firefox */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #718da9), color-stop(100%, #415d79));
+        /* webkit */
+        cursor: pointer;
+        color: white;
+        border-radius: 10px; }
+      /* line 81, ../sass/index.scss */
+      body #content form p.error {
+        display: none;
+        float: left;
+        color: red;
+        margin: 0 0 20px 37%; }
+
+/* line 93, ../sass/index.scss */
+h3, h4 {
+  text-align: center; }
+
+/* line 97, ../sass/index.scss */
+h3 {
+  margin: 20px auto;
+  padding-top: 20px; }
+
+/* line 102, ../sass/index.scss */
+h4 {
+  margin: 50px auto; }
