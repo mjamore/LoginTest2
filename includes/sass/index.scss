@@ -9,6 +9,12 @@ body {
 	background: $bg-color;
 	font-family: Georgia, sans-serif;
 
+	#page-description {
+		width: 90%;
+		max-width: 800px;
+		margin: 0 auto;
+	} /* #page-description */
+
 	#content {
 		width: 90%;
 		margin: 0 auto;
@@ -21,7 +27,7 @@ body {
 			border-radius: 10px;
 		} /* #form-login-container, #form-register-container */
 
-		#form-login-container:after, #form-register-container:after, input:after, label:after, #pw-login:after {
+		#form-login-container:after, #form-register-container:after, #form-login:after, #form-register:after, input:after, label:after, #pw-login:after {
 		    content: ".";
 		    display: block;
 		    height: 0;
@@ -34,11 +40,13 @@ body {
 		margin: 0 auto;
 
 			label {
-				width: 30%;
+				width: 33%;
+				height: 0px;
+				line-height: 30px;
 				display: inline-block;
 				text-align: right;
 				float: left;
-				line-height: 40px;
+				clear: both;
 			} /* label */
 
 			input {
@@ -48,16 +56,17 @@ body {
 				margin-bottom: 10px;
 				height: 30px;
 				float: right;
+				clear: both;
 			} /* input */	
 
 			.valid {
-				background: #AFE2AF;
+				background: url("../../images/being_used/green-check-30x30.png") no-repeat scroll right center #AFE2AF;
 				border: 2px solid #155215;
 				border-radius: 3px;
 			} /* .valid */
 
 			.invalid {
-				background: #F5BDBD;
+				background: url("../../images/being_used/red-x-30x30.png") no-repeat scroll right center #F5BDBD;
 				border: 2px solid #640B0B;
 				border-radius: 3px;
 			} /* .invalid */
@@ -90,8 +99,12 @@ body {
 	} /* #content */
 }
 
-h3, h4 {
+h1, h3, h4 {
 	text-align: center;
+}
+
+h1 {
+	margin: 50px auto;	
 }
 
 h3 {
@@ -99,7 +112,38 @@ h3 {
 	padding-top: 20px;
 }
 
-h4 {
-	margin: 50px auto;	
+
+@media screen and (max-width: 500px) {
+	body #content form label, body #content form input {
+		display: block;
+		width: 100%;
+	}
+
+	body #content form label {
+		width: 90%;
+		height: 10px;
+		text-align: left;
+		margin-left: 12px;
+		line-height: 0px;
+	}
+
+	body #content form input {
+		text-align: left;
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	body #content form input[type=submit] {
+		text-align: center;
+		width: 90%;
+		margin: 20px auto;
+		float: none;
+	}
+
+	body #content form p.error {
+		margin: 10px 0 20px 20px;
+	}
 }
+
 

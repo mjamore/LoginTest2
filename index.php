@@ -7,7 +7,9 @@
 	</head>
 
 	<body>
-		<h4>Login or Register Below</h4>
+		<h1>Login or Register Below</h1>
+
+		<p id="page-description">This login system was built to show I'm a bad ass.  It uses JS/jQuery on the client side for form validation and PHP/MySQL on the server to process form data and store registration data.</p>
 
 		<div id="content">
 
