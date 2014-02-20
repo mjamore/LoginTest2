@@ -44,7 +44,7 @@ body {
       /* .valid */
       /* .invalid */
       /* input[type=submit] */
-      /* p.error */ }
+      /* .error */ }
       /* line 42, ../sass/index.scss */
       body #content form label {
         width: 33%;
@@ -91,53 +91,60 @@ body {
         color: white;
         border-radius: 10px; }
       /* line 90, ../sass/index.scss */
-      body #content form p.error {
+      body #content form .error {
         display: none;
         float: left;
         color: red;
-        margin: 0 0 20px 37%; }
+        margin: 0 0 20px 37%;
+        /* ul */ }
+        /* line 96, ../sass/index.scss */
+        body #content form .error ul {
+          margin-left: 30px; }
 
-/* line 102, ../sass/index.scss */
+/* line 106, ../sass/index.scss */
 h1, h3, h4 {
   text-align: center; }
 
-/* line 106, ../sass/index.scss */
+/* line 110, ../sass/index.scss */
 h1 {
   margin: 50px auto; }
 
-/* line 110, ../sass/index.scss */
+/* line 114, ../sass/index.scss */
 h3 {
   margin: 20px auto;
   padding-top: 20px; }
 
 @media screen and (max-width: 500px) {
-  /* line 117, ../sass/index.scss */
-  body #content form label, body #content form input {
-    display: block;
-    width: 100%; }
+  /* line 121, ../sass/index.scss */
+  body #content form {
+    /* label */
+    /* input */
+    /* input[type=submit] */
+    /* .error */ }
+    /* line 122, ../sass/index.scss */
+    body #content form label {
+      width: 90%;
+      height: 10px;
+      text-align: left;
+      margin-left: 12px;
+      line-height: 0px;
+      display: block; }
+    /* line 131, ../sass/index.scss */
+    body #content form input {
+      text-align: left;
+      width: 90%;
+      margin: 0 auto;
+      float: none;
+      display: block; }
+    /* line 139, ../sass/index.scss */
+    body #content form input[type=submit] {
+      text-align: center;
+      width: 90%;
+      margin: 20px auto;
+      float: none; }
+    /* line 146, ../sass/index.scss */
+    body #content form .error {
+      margin: 10px 0 20px 20px; }
 
-  /* line 122, ../sass/index.scss */
-  body #content form label {
-    width: 90%;
-    height: 10px;
-    text-align: left;
-    margin-left: 12px;
-    line-height: 0px; }
-
-  /* line 130, ../sass/index.scss */
-  body #content form input {
-    text-align: left;
-    width: 90%;
-    margin: 0 auto;
-    float: none; }
-
-  /* line 137, ../sass/index.scss */
-  body #content form input[type=submit] {
-    text-align: center;
-    width: 90%;
-    margin: 20px auto;
-    float: none; }
-
-  /* line 144, ../sass/index.scss */
-  body #content form p.error {
-    margin: 10px 0 20px 20px; } }
+  /* body #content form */ }
+/* @media */

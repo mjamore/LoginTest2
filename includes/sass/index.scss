@@ -87,12 +87,16 @@ body {
 				border-radius: 10px;
 			} /* input[type=submit] */
 
-			p.error {
+			.error {
 				display: none;
 				float: left;
 				color: red;
 				margin: 0 0 20px 37%;
-			} /* p.error */
+
+				ul {
+					margin-left: 30px;
+				} /* ul */
+			} /* .error */
 
 		} /* form */
 
@@ -114,36 +118,36 @@ h3 {
 
 
 @media screen and (max-width: 500px) {
-	body #content form label, body #content form input {
-		display: block;
-		width: 100%;
-	}
+	body #content form {
+		label {
+			width: 90%;
+			height: 10px;
+			text-align: left;
+			margin-left: 12px;
+			line-height: 0px;
+			display: block;
+		}/* label */
 
-	body #content form label {
-		width: 90%;
-		height: 10px;
-		text-align: left;
-		margin-left: 12px;
-		line-height: 0px;
-	}
+		input {
+			text-align: left;
+			width: 90%;
+			margin: 0 auto;
+			float: none;
+			display: block;
+		}/* input */
 
-	body #content form input {
-		text-align: left;
-		width: 90%;
-		margin: 0 auto;
-		float: none;
-	}
+		input[type=submit] {
+			text-align: center;
+			width: 90%;
+			margin: 20px auto;
+			float: none;
+		}/* input[type=submit] */
 
-	body #content form input[type=submit] {
-		text-align: center;
-		width: 90%;
-		margin: 20px auto;
-		float: none;
-	}
+		.error {
+			margin: 10px 0 20px 20px;
+		}/* .error */
 
-	body #content form p.error {
-		margin: 10px 0 20px 20px;
-	}
-}
+	} /* body #content form */
+} /* @media */
 
 

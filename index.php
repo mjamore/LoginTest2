@@ -15,16 +15,24 @@
 
 			<div id="form-login-container">
 				<h3>Login</h3>
-				<form id="form-login" name="form-login" action="login.php" method="GET">
+				<form id="form-login" name="form-login" action="login.php" method="POST">
 					<label for="email-login">Email Address:</label>
-					<input id="email-login" name="email-login">
+					<input id="email-login" name="email-login" type="email">
 					<p class="error">This is not a valid email address.</p>
 
 					<br>
 					
 					<label for="pw-login">Password:</label>
-					<input id="pw-login" name="pw-login">
-					<p class="error">Must contain at least: - 8 characters, - 1 number, - 1 capital letter</p>
+					<input id="pw-login" name="pw-login" type="password">
+					<div class="error">
+						<p>Must contain at least:</p>
+						<ul>
+							<li>8 characters</li>
+							<li>1 number</li>
+							<li>1 uppercase letter</li>
+							<li>1 lowercase letter</li>
+						</ul>
+					</div>
 
 					<br>
 
@@ -36,20 +44,27 @@
 				<h3>Register</h3>
 				<form id="form-register" name="form-register" action="register.php" method="GET">
 					<label for="email-register">Email Address:</label>
-					<input id="email-register" name="email-register">
+					<input id="email-register" name="email-register" type="email">
 					<p class="error">This is not a valid email address.</p>
 
 					<br>
 					
 					<label for="pw1-register">Password:</label>
-					<input id="pw1-register" name="pw1-register">
-					<!-- <p>Password must be at least 8 characters, containing at least 1 number and 1 capital letter.</p> -->
-					<p class="error">Must contain at least: - 8 characters, - 1 number, - 1 capital letter</p>
+					<input id="pw1-register" name="pw1-register" type="password">
+					<div class="error">
+						<p>Must contain at least:</p>
+						<ul>
+							<li>8 characters</li>
+							<li>1 number</li>
+							<li>1 uppercase letter</li>
+							<li>1 lowercase letter</li>
+						</ul>
+					</div>
 
 					<br>
 
 					<label for="pw2-register">Confirm Password:</label>
-					<input id="pw2-register" name="pw2-register">
+					<input id="pw2-register" name="pw2-register" type="password">
 					<p class="error">The passwords do not match.</p>
 
 					<br>
